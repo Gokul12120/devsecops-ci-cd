@@ -23,3 +23,7 @@ jobs:
 
       - name: Run Tests
         run: npm test
+
+      - name: Use Secret in CI/CD
+        run: echo "API Key is ${{ secrets.MY_SECRET_API_KEY }}" > secret.txt
+
